@@ -1,5 +1,5 @@
 
-#This script sorts each image file and corresponding xml file into a test/train partition
+#This script sorts each image file and corresponding xml file into a test/train partition based on a random seed
 
 import os
 import random
@@ -19,7 +19,7 @@ os.makedirs(test_directory, exist_ok=True)
 # List all image files in the image directory
 image_files = [file for file in os.listdir(image_directory) if file.endswith('.jpg')]
 
-# Set the random seed for reproducibility
+# Set the random seed so as to ensure reproducibility
 random_seed = 42
 
 # Perform the train/test split
