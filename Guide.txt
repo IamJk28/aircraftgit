@@ -21,7 +21,6 @@ run train-testsplitcode.py
 #run step 4,5,6
 
 
-dependencies: pip install opencv-python pip install --upgrade pyqt5 lxml  install tensorflow --upgrade
 
 
 
@@ -31,4 +30,4 @@ dependencies: pip install opencv-python pip install --upgrade pyqt5 lxml  instal
 
 
 #possible dependencies (in terms of : pip install matplotlib pip install cycler pip install kiwisolver
-pip install contourpy pip install fonttools pip install protobuf pip install matplotlib ==3.2
+pip install contourpy pip install fonttools pip install protobuf pip install matplotlib ==3.2 pip install opencv-python pip install --upgrade pyqt5 lxml  install tensorflow --upgrade
