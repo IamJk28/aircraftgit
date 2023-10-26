@@ -1,3 +1,5 @@
+#run all the following code in command prompt
+
 mkdir "Aircraft Project"  
 #cd into it
 #install git @  https://git-scm.com/downloads
@@ -10,15 +12,13 @@ odn\Scripts\activate
 python-m pip install --upgrade pip
 pip install ipykernel
 python -m ipykernel install --user --name=odn
-pip install wget
-#run steps 0-2
-#now run step 2.5 installing dependencies until it runs properly (for me dependencies are tensorflow cycler kiwisolver)
-#run step 3
-#copy images and corresponding labels from teams to  Aircraft Project/Tensorflow/workspace/images/collectedimages
-pip install shutil
-move train-test-split.py Tensorflow/scripts
-run train-testsplitcode.py
-#run step 4,5,6
+jupyter notebook
+#open of Aircraft model.ipynb
+#run steps 0-2 of Aircraft model.ipynb
+#now run step 2.5 of Aircraft model.ipynb, installing dependencies until it runs properly (for me dependencies are tensorflow cycler kiwisolver)
+#run step 3 of Aircraft model.ipynb
+#copy images and corresponding labels from MS teams to  Aircraft Project/Tensorflow/workspace/images/collectedimages
+#run step 4,5,6 of Aircraft model.ipynb
 
 
 

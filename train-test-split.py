@@ -1,6 +1,5 @@
-#create splitting venv + new ws
 
-pip install scikit-learn
+#This script sorts each image file and corresponding xml file into a test/train partition
 
 import os
 import random
@@ -28,18 +27,18 @@ train_files, test_files = train_test_split(image_files, test_size=0.2, random_st
 
 # Move the selected images and their corresponding XML files to the train folder
 for file in train_files:
-    image_src = os.path.join(image_directory, file)
-    xml_src = os.path.join(xml_directory, file.replace('.jpg', '.xml'))
+    image_start = os.path.join(image_directory, file)
+    xml_start = os.path.join(xml_directory, file.replace('.jpg', '.xml'))
     image_dest = os.path.join(train_directory, file)
     xml_dest = os.path.join(train_directory, file.replace('.jpg', '.xml'))
-    copyfile(image_src, image_dest)
-    copyfile(xml_src, xml_dest)
+    copyfile(image_start, image_dest)
+    copyfile(xml_start, xml_dest)
 
 # Move the remaining images and their corresponding XML files to the test folder
 for file in test_files:
-    image_src = os.path.join(image_directory, file)
-    xml_src = os.path.join(xml_directory, file.replace('.jpg', '.xml'))
+    image_start = os.path.join(image_directory, file)
+    xml_start = os.path.join(xml_directory, file.replace('.jpg', '.xml'))
     image_dest = os.path.join(test_directory, file)
     xml_dest = os.path.join(test_directory, file.replace('.jpg', '.xml'))
-    copyfile(image_src, image_dest)
-    copyfile(xml_src, xml_dest)
+    copyfile(image_start, image_dest)
+    copyfile(xml_start, xml_dest)
