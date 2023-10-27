@@ -6,7 +6,7 @@ Machine-Learning basic installation guide (Windows)
 
 mkdir "Aircraft Project"  
 cd Aircraft Project
-git clone https://github.com/IamJk28/Aircraft
+git clone https://github.com/IamJk28/aircraftgit
 xcopy /E Aircraft ..
 
 #now we create a new virtual environment (venv) for all modules (this sections off the modules we need for Machine-Learning from the rest of our computers modules/libraries)
