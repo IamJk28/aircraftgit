@@ -16,7 +16,7 @@ python -m venv odn
 odn\Scripts\activate
 
 #These lines setup pip, setup jupyter notebooks and allow us to use our venv as our kernel
-python-m pip install --upgrade pip
+python -m pip install --upgrade pip
 pip install ipykernel
 pip install jupyter notebook
 python -m ipykernel install --user --name=odn
